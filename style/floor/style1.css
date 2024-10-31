@@ -1,0 +1,739 @@
+
+/* FLOOR 1*/
+ 
+div#lab102{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 5px;
+width: 150px;
+height: 120px;
+
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#lab101{
+z-index:1;
+position:absolute;
+top:146px;
+left: 5px;
+width: 150px;
+height: 120px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#stairs{
+ z-index:1;
+position:absolute;
+top:277px;
+left: 5px;
+width: 100px;
+height: 75px;
+background-color: rgba(0, 0, 0, 0.497);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#store{
+    z-index:1;
+position:absolute;
+top:363px;
+left: 5px;
+width: 150px;
+height: 75px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#exam{
+    z-index:1;
+position:absolute;
+top:449px;
+left: 5px;
+width: 300px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#pg{
+    z-index:1;
+position:absolute;
+top:449px;
+left: 316px;
+width: 75px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+ writing-mode: vertical-lr;
+}
+
+div#stairs1{
+    z-index:1;
+position:absolute;
+top:524px;
+left: 402px;
+width: 80px;
+height: 125px;
+background-color: rgba(0, 0, 0, 0.497);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#admin{
+    z-index:1;
+position:absolute;
+top:449px;
+left: 493px;
+width: 340px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#estate{
+    z-index:1;
+position:absolute;
+top:449px;
+left: 844px;
+width: 70px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+ writing-mode: vertical-lr;
+}
+
+div#cr12{
+    z-index:1;
+position:absolute;
+top:449px;
+left: 925px;
+width: 200px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center ;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+
+}
+
+div#cr13{
+    z-index:1;
+position:absolute;
+top:229px;
+left: 925px;
+width: 200px;
+height: 170px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#computer{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 925px;
+width: 200px;
+height: 203px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#toilet{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 844px;
+width: 70px;
+height: 100px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#store1{
+    z-index:1;
+position:absolute;
+top:126px;
+left: 804px;
+width: 110px;
+height: 70px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#stairs2{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 723px;
+width: 110px;
+height: 70px;
+background-color: rgba(0, 0, 0, 0.497);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#central{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 447px;
+width: 265px;
+height: 200px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+
+div#cr11{
+    z-index:1;
+position:absolute;
+top:15px;
+left: 204px;
+width: 190px;
+height: 130px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;
+}
+div#welcomeMessage {
+    /* Styling for the welcome message */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the color as needed */
+    font-size: large;
+    text-align: center;
+}
+
+
+div#girls{
+    z-index:1;
+position:absolute;
+top:156px;
+left: 204px;
+width: 190px;
+height: 130px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#toilet1{
+    z-index:1;
+position:absolute;
+top:297px;
+left: 204px;
+width: 90px;
+height: 40px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#toilet2{
+    z-index:1;
+position:absolute;
+top:347px;
+left: 303px;
+width: 91px;
+height: 50px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#vice{
+    z-index:1;
+position:absolute;
+top:292px;
+left: 405px;
+width: 60px;
+height: 105px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: small;
+ border-radius: 5px; 
+}
+
+div#placement{
+    z-index:1;
+position:absolute;
+top:292px;
+left: 476px;
+width: 60px;
+height: 105px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: x-small;
+ border-radius: 5px; 
+}
+
+div#principle{
+    z-index:1;
+position:absolute;
+top:292px;
+left: 547px;
+width: 150px;
+height: 105px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px; 
+}
+
+div#board{
+    z-index:1;
+position:absolute;
+top:292px;
+left: 708px;
+width: 150px;
+height: 105px;
+background-color: rgba(0, 0, 0, 0.095);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ border-radius: 5px;   
+}
+
+div#computer:hover,div#lab102:hover,div#lab101:hover{
+background-color: rgba(208, 255, 0, 0.237);
+
+
+
+}
+
+div#cr11:hover,div#cr12:hover,div#cr13:hover{
+background-color: rgba(73,230,73,0.489);
+
+}
+
+div#toilet:hover,div#toilet1:hover,div#toilet2:hover{
+background-color: rgba(120, 185, 242, 0.47);
+
+}
+
+div#exam:hover,div#central:hover{
+background-color: rgba(206, 89, 89, 0.486);
+
+}
+
+div#pg:hover{
+background-color: blueviolet;
+
+
+}
+
+
+div#first{
+z-index:1;
+position:absolute;
+top:745px;
+left: 20px;
+width:20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+
+}
+
+div#second{
+z-index:1;
+position:absolute;
+top:745px;
+left: 50px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#third{
+z-index:1;
+position:absolute;
+top:745px;
+left: 80px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid rgb(0, 0, 0);
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#fourth{
+z-index:1;
+position:absolute;
+top:745px;
+left: 110px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#fifth{
+z-index:1;
+position:absolute;
+top:745px;
+left: 140px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#sixth{
+z-index:1;
+position:absolute;
+top:745px;
+left: 170px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#seventh{
+z-index:1;
+position:absolute;
+top:745px;
+left: 200px;
+width: 20px;
+height: 20px;
+
+background-color: rgb(108, 248, 234);
+border: 1px solid black;
+padding: 5px;
+margin: 10px;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+div#heading{
+position: absolute;
+top: 690px;
+left: 15px;
+
+
+}
+#occupy {
+    background-color: #fa7d08;
+    color: #fff;
+    padding: 6px 7px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0 2px 4px rgba(36, 37, 36, 0.396);
+    position: absolute;
+    left: 90;
+    right: 0;
+    bottom: 0;
+    
+    transition: background-color 0.3s ease;
+    
+    
+    
+}
+#occupy:hover {
+    background-color: #ff4b03;
+}
+
+#nameinput {
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-wrap: balance;
+ font-size: large;
+ text-decoration: none;
+ color: black;
+}
+
+#outputText {
+text-align: center;
+
+font-weight: bold;
+}
+
+
+

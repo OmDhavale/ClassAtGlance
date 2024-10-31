@@ -1,0 +1,820 @@
+/* FLOOR 3*/
+    
+div#lab304{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 5px;
+    width: 250px;
+    height: 150px;
+
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+     
+}
+
+div#lab304:hover,div#lab303:hover,div#lab302:hover,div#lab301:hover,div#lab305:hover,div#lab306:hover,div#lab307:hover{
+    background-color: rgba(208, 255, 0, 0.237);
+    
+   
+    
+}
+
+div#cr31:hover,div#cr32:hover,div#cr33:hover,div#cr34:hover,div#cr35:hover,div#cr36:hover,div#cr37:hover,div#cr38:hover{
+    background-color: rgba(73,230,73,0.489);
+    
+}
+
+div#toilet:hover,div#toilet1:hover,div#toilet2:hover{
+    background-color: rgba(120, 185, 242, 0.47);
+    
+}
+
+div#staff:hover,div#staff1:hover{
+ background-color: rgba(206, 89, 89, 0.486);
+ 
+}
+
+div#tutorial:hover{
+    background-color: blueviolet;
+    
+
+}
+
+div#seminar:hover{
+ background-color: rgba(71, 71, 205, 0.711);
+ 
+}
+
+div#lab303{
+    z-index:1;
+    position:absolute;
+    top:166px;
+    left: 5px;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+
+div#stairs{
+    z-index:1;
+    position:absolute;
+    top:327px;
+    left: 5px;
+    width: 180px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.407);
+    border: 1px solid rgba(0, 0, 0, 0.497);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+div#lab{
+    z-index:1;
+    position:absolute;
+    top:408px;
+    left: 5px;
+    width: 250px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+
+
+div#lab1{
+    z-index:1;
+    position:absolute;
+    top:434px;
+    left: 5px;
+    width: 250px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+
+div#cr34{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 5px;
+    width: 280px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+
+div#staff{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 296px;
+    width: 30px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: small;
+     border-radius: 5px;
+}
+
+
+div#cr35{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 337px;
+    width: 170px;
+    height: 170px;
+    background-color: rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     border-radius: 5px;
+}
+
+
+div#stairs1{
+    z-index:1;
+    position:absolute;
+    top:535px;
+    left: 518px;
+    width: 70px;
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0.497);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large; 
+     border-radius: 5px;
+
+}
+
+
+div#lab302{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 599px;
+    width: 170px;
+    height: 170px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px;
+
+}
+
+
+div#lab301{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 779px;
+    width: 170px;
+    height: 170px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px;
+}
+
+
+div#tutorial{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 959px;
+    width: 30px;
+    height: 170px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: small;  
+     border-radius: 5px;
+     writing-mode: vertical-lr;
+        
+}
+
+
+
+div#cr36{
+    z-index:1;
+    position:absolute;
+    top:460px;
+    left: 999px;
+    width: 170px;
+    height: 170px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+div#cr31{
+    z-index:1;
+    position:absolute;
+    top:245px;
+    left: 999px;
+    width: 170px;
+    height: 170px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+div#cr37{
+    z-index:1;
+    position:absolute;
+    top:149px;
+    left: 999px;
+    width: 170px;
+    height: 85px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+div#cr38{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 999px;
+    width: 170px;
+    height: 133px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+
+div#toilet{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 948px;
+    width: 40px;
+    height: 100px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: small;  
+     border-radius: 5px; 
+}
+
+
+
+div#stairs2{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 867px;
+    width: 70px;
+    height: 35px;
+    background-color:  rgba(0, 0, 0, 0.497);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+div#staff1{
+    z-index:1;
+    position:absolute;
+    top:116px;
+    left: 899px;
+    width: 50px;
+    height: 65px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: small;  
+     border-radius: 5px; 
+}
+
+
+div#seminar{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 621px;
+    width: 235px;
+    height: 200px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+
+div#cr33{
+    z-index:1;
+    position:absolute;
+    top:5px;
+    left: 331px;
+    width: 210px;
+    height: 150px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+
+div#lab305{
+    z-index:1;
+    position:absolute;
+    top: 166px;
+    left: 331px;
+    width: 210px;
+    height: 120px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px;  
+}
+
+
+div#toilet1{
+    z-index:1;
+    position:absolute;
+    top: 297px;
+    left: 331px;
+    width: 105px;
+    height: 70px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px;  
+}
+
+
+div#toilet2{
+    z-index:1;
+    position:absolute;
+    top: 375px;
+    left: 444px;
+    width: 97px;
+    height: 35px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px;  
+}
+
+
+
+div#lab306{
+    z-index:1;
+    position:absolute;
+    top: 293px;
+    left: 552px;
+    width: 125px;
+    height: 118px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: normal;  
+     border-radius: 5px;  
+}
+
+
+
+div#lab307{
+    z-index:1;
+    position:absolute;
+    top: 293px;
+    left: 688px;
+    width: 105px;
+    height: 118px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: normal;  
+     border-radius: 5px;  
+}
+
+
+
+div#cr32{
+    z-index:1;
+    position:absolute;
+    top: 293px;
+    left: 804px;
+    width: 135px;
+    height: 118px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: normal;  
+     border-radius: 5px;     
+}
+
+div#first{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 20px;
+    width:20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+   
+}
+
+div#second{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#third{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#fourth{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 110px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#fifth{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#sixth{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 170px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#seventh{
+z-index:1;
+    position:absolute;
+    top:745px;
+    left: 200px;
+    width: 20px;
+    height: 20px;
+
+    background-color: rgb(108, 248, 234);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;
+     text-decoration: none;
+     color: black;
+}
+
+div#heading{
+position: absolute;
+top: 690px;
+left: 15px;
+
+
+}
+div#title {z-index:1;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color:  rgba(0, 0, 0, 0.095);
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: balance;
+     font-size: large;  
+     border-radius: 5px; 
+}
+
+#occupy {
+        background-color: #fa7d08;
+        color: #fff;
+        padding: 6px 7px;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 90px;
+        box-shadow: 0 2px 4px rgba(36, 37, 36, 0.396);
+        position: absolute;
+        left: 90;
+        right: 0;
+        bottom: 0;
+        transition: background-color 0.3s ease;
+        
+        }
+#occupy:hover {
+        background-color: #ff4b03;
+    }
