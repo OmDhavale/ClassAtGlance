@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 // Connect to MongoDB
-mongoose.connect('process.env.MONGODB_URI', {
+mongoose.connect('mongodb://process.env.MONGODB_URI', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
