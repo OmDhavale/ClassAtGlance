@@ -16,15 +16,19 @@ db.on("error",()=>{
 db.once("open",()=>{
   console.log('Connected to MongoDB');
 })
+
+
 // Define a schema and model for content storage
 const contentSchema = new mongoose.Schema({
   room: String,
   content: String
 });
-
+//schema end
 const Content = mongoose.model('Content', contentSchema);
 
-app.use(express.static(__dirname + '/'));
+//app.use(express.static(__dirname + '/'));
+app.use(express.static(process.env.MONGODB_URI + '/'));
+
 
 // Load initial content for each room from the database
 async function getInitialContent(room) {
