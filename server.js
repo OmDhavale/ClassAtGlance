@@ -32,7 +32,7 @@ app.use(express.static(__dirname + '/'));
 
 // Load initial content for each room from the database
 async function getInitialContent(room) {
-  const data = await Content.findOne({ room });
+  const data = await Content.find({ room });
   return data ? data.content : null;
 }
 
