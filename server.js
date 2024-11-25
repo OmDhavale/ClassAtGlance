@@ -26,8 +26,8 @@ const contentSchema = new mongoose.Schema({
 //schema end
 const Content = mongoose.model('Content', contentSchema);
 
-//app.use(express.static(__dirname + '/'));
-app.use(express.static(process.env.MONGODB_URI + '/'));
+app.use(express.static(__dirname + '/'));
+
 
 
 // Load initial content for each room from the database
