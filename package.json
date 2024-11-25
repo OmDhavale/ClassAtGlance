@@ -1,4 +1,12 @@
 {
+  "name": "ClassAtGlance",
+  "version": "1.0.0",
+  "description": "BE+FE PROJECT",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "core-js": "^3.39.0",
     "dotenv": "^16.4.5",
