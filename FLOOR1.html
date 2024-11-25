@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1FLOOR</title>
+    <link rel="stylesheet" href="style/floor/style1.css">
+    
+</head>
+<body>
+    <div id="heading"><h1>1<sup>st</sup></sup>FLOOR</h1></div>
+    
+    <div id="lab102"> 
+        <div> CHEMISTRY LAB-102
+        </br>
+        <div#lab102 id="displayName102"></div#lab102>
+        </div>
+    
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlert102()">Occupy</button> 
+         </div>
+        
+         <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayName102');
+            window.NameAlert102=function (){
+                const currentContent102 = prompt('Enter division, batch:');
+                
+                  if(currentContent102!==null) { document.getElementById('displayName102').innerText = `\n${currentContent102}`;
+                     document.getElementById('lab102').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContent102',currentContent102);
+                    }
+                  if(currentContent102 =='') {document.getElementById('displayName102').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContent102', (content102) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content102 !== null) {
+                  displayContentElement.innerText = `\n${content102}`;
+                  document.getElementById('lab102').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content102=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab102').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+    }); 
+        
+          
+        });
+        
+            
+           
+        </script>
+    </div>
+
+    <div id="lab101">
+        <div>MECHANICS LAB-101
+        </br>
+        <div#lab101 id="displayName101"></div#lab101>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlert101()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayName101');
+            window.NameAlert101=function (){
+                const currentContent101 = prompt('Enter division, batch:');
+                
+                  if(currentContent101 !==null) { document.getElementById('displayName101').innerText = `\n${currentContent101}`;
+                     document.getElementById('lab101').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContent101',currentContent101);
+                     
+                    }
+                  if(currentContent101 =='') {document.getElementById('displayName101').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContent101', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab101').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab101').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+    }); 
+        
+          
+        });
+        
+            
+           
+        </script>
+    </div>
+    <div id="stairs">STAIRS</div>
+    <div id="store">STORE ROOM</div>
+    <div id="exam">EXAM ROOM</div>
+    <div id="pg">PG  CLASS ROOM</div>
+    <div id="stairs1">STAIRS</div>
+    <div id="admin">ADMINISTRATIVE OFFICE</div>
+    <div id="estate">ESTATE MANAGER</div>
+    <div id="cr12">
+        <div>
+            CR-12
+        </br>
+        <div#cr12 id="displayName12"></div#cr12>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlert12()">Occupy</button> 
+         </div>
+         <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayName12');
+            // Retrieve the stored content from sessionStorage
+            // const storedContent = sessionStorage.getItem('CR12Content');
+            //     if (storedContent) {
+            //         displayContentElement.innerText = `Occupied by\n${storedContent}`;
+            //         document.getElementById('cr12').style.backgroundColor = 'rgb(250, 175, 14)';
+            //     }
+             window.NameAlert12=function (){
+                const currentContent12 = prompt('Enter name:');
+                
+                  if(currentContent12!==null) { document.getElementById('displayName12').innerText = `Occupied by\n${currentContent12}`;
+                     document.getElementById('cr12').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContent12',currentContent12);
+                    //  sessionStorage.setItem('CR12Content', currentContent);
+                    }
+                  if(currentContent12==null)  {document.getElementById('displayName12').innerText= 'Vacant';
+                         socket.emit('editContent12', null);
+                      // Clear the stored content in sessionStorage
+                    //   sessionStorage.removeItem('CR12Content');
+                    }
+                }
+            
+         
+            socket.on('updateContent12', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content!== null) {
+                  displayContentElement.innerText = `Occupied by\n${content}`;
+                  document.getElementById('cr12').style.backgroundColor = 'rgb(250, 175, 14)';
+                } 
+                 if(content=='') 
+                 {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('cr12').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+    }); 
+        
+          
+        });
+        
+            
+           
+        </script>
+        
+        
+    </div>
+    
+    <div id="cr13">
+        <div>
+            CR-13 </br>
+        <div#cr13 id="displayName13"></div#cr13>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlert13()">Occupy</button> 
+        </div>
+
+         <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+        <script>
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayName13');
+            window.NameAlert13=function (){
+                const currentContent = prompt('Enter name:');
+                
+                 if(currentContent!==null) { document.getElementById('displayName13').innerText = `Occupied by\n${currentContent}`;
+                document.getElementById('cr13').style.backgroundColor = 'rgb(250, 175, 14)';
+                socket.emit('editContent',currentContent);
+                
+                }
+                 if(currentContent=='')
+                 
+                {document.getElementById('displayName13').innerText= 'Vacant';}
+            }
+            
+         
+            socket.on('updateContent', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content!== null) {
+                  displayContentElement.innerText = `Occupied by\n${content}`;
+                  document.getElementById('cr13').style.backgroundColor = 'rgb(250, 175, 14)';
+                } 
+                 if(content=='')
+                
+                {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('cr13').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+            }); 
+        
+          
+        });
+        </script>
+    </div>
+    <div id="computer">COMPUTER ORGANIZATION LAB-103</div>
+    <div id="toilet">TOILET</div>
+    <div id="store1">STORE ROOM</div>
+    <div id="stairs2">STAIRS</div>
+    <div id="central">CENTRAL COMPUTING FACILITY</div>
+    <div id="cr11">
+        <div>
+            CR-11 </br>
+        <div#cr11 id="displayName11"></div#cr11>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlert11()">Occupy</button> 
+        </div>
+        
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayName11');
+            window.NameAlert11=function (){
+                const currentContent11 = prompt('Enter name:');
+                
+                  if(currentContent11!==null) { document.getElementById('displayName11').innerText = `Occupied by\n${currentContent11}`;
+                     document.getElementById('cr11').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContent11',currentContent11);
+                    }
+                  if(currentContent11=='') {document.getElementById('displayName11').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContent11', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `Occupied by\n${content}`;
+                  document.getElementById('cr11').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('cr11').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+            });
+        
+          
+        });  
+        </script>
+    </div>
+    <div id="girls">GIRLS COMMON ROOM</div>
+    <div id="toilet1">TOILET</div>
+    <div id="toilet2">TOILET</div>
+    <div id="vice">VICE PRINCIPLE CABIN</div>
+    <div id="placement">PLACEMENT ROOM</div>
+    <div id="principle">PRINCIPLE'S ROOM</div>
+    <div id="board">BOARD ROOM</div>
+    <div id=""></div>
+    <div id=""></div>
+    <div id=""></div>
+  
+    <a href="FLOOR1.html"><div id="first">1</div></a>
+    <a href="2FLOOR.html"> <div id="second">2</div></a>
+    <a href="3FLOOR.html"> <div id="third">3</div></a>
+    <a href="4FLOOR.html"> <div id="fourth">4</div></a>
+    <a href="5FLOOR.html"> <div id="fifth">5</div></a>
+    <a href="6FLOOR.html"><div id="sixth">6</div></a>
+    <a href="7FLOOR.html"> <div id="seventh">7</div></a>
+   <p></p>
+  
+    
+</body>
+</html>

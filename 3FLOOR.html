@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3FLOOR</title>
+    <link rel="stylesheet" href="style/floor/style3.css">
+  
+</head>
+<body>
+    
+    <div id="heading"><h1>3<sup>rd</sup></sup>FLOOR</h1></div>
+    
+    <div id="lab304">
+        <div>DIGITAL SYSTEM LAB-304
+        </br>
+        <div#lab304 id="displayNamelab304"></div#lab304>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab304()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab304');
+            window.NameAlertlab304=function (){
+                const currentContentlab304 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab304 !==null) { document.getElementById('displayNamelab304').innerText = `\n${currentContentlab304}`;
+                     document.getElementById('lab304').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab304',currentContentlab304);
+                     
+                    }
+                  if(currentContentlab304 =='') {document.getElementById('displayNamelab304').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab304', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab304').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab304').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+     
+    
+    <div id="lab303">
+        <div>MICROPROCESSOR LAB-303
+        </br>
+        <div#lab303 id="displayNamelab303"></div#lab303>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab303()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab303');
+            window.NameAlertlab303=function (){
+                const currentContentlab303 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab303 !==null) { document.getElementById('displayNamelab303').innerText = `\n${currentContentlab303}`;
+                     document.getElementById('lab303').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab303',currentContentlab303);
+                     
+                    }
+                  if(currentContentlab303 =='') {document.getElementById('displayNamelab303').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab303', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab303').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab303').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+    <div id="stairs">STAIRS</div>
+    <div id="lab"></div>
+    <div id="lab1"></div>
+    <!-- CR 34 -->
+    <div id="cr34">
+        <div>
+            CR-34
+            </br>
+            <div#crcr34 id="displayNamecr34"></div#crcr34>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr34()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr34');
+    
+     window.NameAlertcr34=function (){
+        const currentContentcr34 = prompt('Enter name, subject:');
+        
+          if(currentContentcr34!==null) { document.getElementById('displayNamecr34').innerText = `Occupied by\n${currentContentcr34}`;
+             document.getElementById('cr34').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr34',currentContentcr34);
+            //  sessionStorage.setItem('CRcr34Content', currentContent);
+            }
+          if(currentContentcr34==null)  {document.getElementById('displayNamecr34').innerText= 'Vacant';
+                 socket.emit('editContentcr34', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr34Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr34', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr34').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr34').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+
+    <div id="staff">STAFF ROOM</div>
+    
+    <!-- CR-35 -->
+    <div id="cr35">
+        <div>
+            CR-35
+            </br>
+            <div#crcr35 id="displayNamecr35"></div#crcr35>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr35()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr35');
+    
+     window.NameAlertcr35=function (){
+        const currentContentcr35 = prompt('Enter name, subject:');
+        
+          if(currentContentcr35!==null) { document.getElementById('displayNamecr35').innerText = `Occupied by\n${currentContentcr35}`;
+             document.getElementById('cr35').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr35',currentContentcr35);
+            //  sessionStorage.setItem('CRcr35Content', currentContent);
+            }
+          if(currentContentcr35==null)  {document.getElementById('displayNamecr35').innerText= 'Vacant';
+                 socket.emit('editContentcr35', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr35Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr35', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr35').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr35').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    <div id="stairs1">STAIRS</div>
+    
+    <div id="lab302">
+        <div>DATABASE MANAGEMENT SYSTEM-302
+        </br>
+        <div#lab302 id="displayNamelab302"></div#lab302>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab302()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab302');
+            window.NameAlertlab302=function (){
+                const currentContentlab302 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab302 !==null) { document.getElementById('displayNamelab302').innerText = `\n${currentContentlab302}`;
+                     document.getElementById('lab302').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab302',currentContentlab302);
+                     
+                    }
+                  if(currentContentlab302 =='') {document.getElementById('displayNamelab302').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab302', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab302').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab302').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+    
+    <div id="lab301">
+        <div>WEB TECHNOLOGY LAB-301
+        </br>
+        <div#lab301 id="displayNamelab301"></div#lab301>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab301()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab301');
+            window.NameAlertlab301=function (){
+                const currentContentlab301 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab301 !==null) { document.getElementById('displayNamelab301').innerText = `\n${currentContentlab301}`;
+                     document.getElementById('lab301').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab301',currentContentlab301);
+                     
+                    }
+                  if(currentContentlab301 =='') {document.getElementById('displayNamelab301').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab301', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab301').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab301').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+    <!--tutoriaal 1-->
+    <div id="tutorial">TUTORIAL ROOM NO.1</div>
+    
+
+    
+    <!--CR-36-->
+    <div id="cr36">
+        <div>
+            CR-36
+            </br>
+            <div#crcr36 id="displayNamecr36"></div#crcr36>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr36()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr36');
+    
+     window.NameAlertcr36=function (){
+        const currentContentcr36 = prompt('Enter name, subject:');
+        
+          if(currentContentcr36!==null) { document.getElementById('displayNamecr36').innerText = `Occupied by\n${currentContentcr36}`;
+             document.getElementById('cr36').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr36',currentContentcr36);
+            //  sessionStorage.setItem('CRcr36Content', currentContent);
+            }
+          if(currentContentcr36==null)  {document.getElementById('displayNamecr36').innerText= 'Vacant';
+                 socket.emit('editContentcr36', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr36Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr36', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr36').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr36').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    
+    <div id="cr31">
+        <div>
+            CR-31
+            </br>
+            <div#crcr31 id="displayNamecr31"></div#crcr31>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr31()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr31');
+    
+     window.NameAlertcr31=function (){
+        const currentContentcr31 = prompt('Enter name, subject:');
+        
+          if(currentContentcr31!==null) { document.getElementById('displayNamecr31').innerText = `Occupied by\n${currentContentcr31}`;
+             document.getElementById('cr31').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr31',currentContentcr31);
+            //  sessionStorage.setItem('CRcr31Content', currentContent);
+            }
+          if(currentContentcr31==null)  {document.getElementById('displayNamecr31').innerText= 'Vacant';
+                 socket.emit('editContentcr31', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr31Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr31', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr31').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr31').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    
+    <div id="cr37">
+        <div>
+            CR-37
+            </br>
+            <div#crcr37 id="displayNamecr37"></div#crcr37>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr37()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr37');
+    
+     window.NameAlertcr37=function (){
+        const currentContentcr37 = prompt('Enter name, subject:');
+        
+          if(currentContentcr37!==null) { document.getElementById('displayNamecr37').innerText = `Occupied by\n${currentContentcr37}`;
+             document.getElementById('cr37').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr37',currentContentcr37);
+            //  sessionStorage.setItem('CRcr37Content', currentContent);
+            }
+          if(currentContentcr37==null)  {document.getElementById('displayNamecr37').innerText= 'Vacant';
+                 socket.emit('editContentcr37', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr37Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr37', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr37').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr37').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    
+    <div id="cr38">
+        <div>
+            CR-38
+            </br>
+            <div#crcr38 id="displayNamecr38"></div#crcr38>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr38()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr38');
+    
+     window.NameAlertcr38=function (){
+        const currentContentcr38 = prompt('Enter name, subject:');
+        
+          if(currentContentcr38!==null) { document.getElementById('displayNamecr38').innerText = `Occupied by\n${currentContentcr38}`;
+             document.getElementById('cr38').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr38',currentContentcr38);
+            //  sessionStorage.setItem('CRcr38Content', currentContent);
+            }
+          if(currentContentcr38==null)  {document.getElementById('displayNamecr38').innerText= 'Vacant';
+                 socket.emit('editContentcr38', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr38Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr38', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr38').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr38').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    <div id="toilet">TOILET</div>
+    <div id="stairs2">STAIRS</div>
+    <div id="staff1">STAFF ROOM</div>
+    
+    <div id="seminar">
+        <div>SEMINAR HALL-2
+        </br>
+        <div#seminar id="displayNameseminar"></div#seminar>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertseminar()">Occupy</button> 
+        </div>
+    
+        <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNameseminar');
+    
+     window.NameAlertseminar=function (){
+        const currentContentseminar = prompt('Enter name, subject:');
+        
+          if(currentContentseminar!==null) { document.getElementById('displayNameseminar').innerText = `Occupied by\n${currentContentseminar}`;
+             document.getElementById('seminar').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentseminar',currentContentseminar);
+            //  sessionStorage.setItem('CRseminarContent', currentContent);
+            }
+          if(currentContentseminar==null)  {document.getElementById('displayNameseminar').innerText= 'Vacant';
+                 socket.emit('editContentseminar', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRseminarContent');
+            }
+        }
+    
+ 
+    socket.on('updateContentseminar', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('seminar').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('seminar').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    
+    <div id="cr33">
+        <div>
+            CR-33
+            </br>
+            <div#crcr33 id="displayNamecr33"></div#crcr33>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr33()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr33');
+    
+     window.NameAlertcr33=function (){
+        const currentContentcr33 = prompt('Enter name, subject:');
+        
+          if(currentContentcr33!==null) { document.getElementById('displayNamecr33').innerText = `Occupied by\n${currentContentcr33}`;
+             document.getElementById('cr33').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr33',currentContentcr33);
+            //  sessionStorage.setItem('CRcr33Content', currentContent);
+            }
+          if(currentContentcr33==null)  {document.getElementById('displayNamecr33').innerText= 'Vacant';
+                 socket.emit('editContentcr33', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr33Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr33', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr33').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr33').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    
+    <div id="lab305">
+        <div>POST GRADUATE LAB-305
+        </br>
+        <div#lab305 id="displayNamelab305"></div#lab305>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab305()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab305');
+            window.NameAlertlab305=function (){
+                const currentContentlab305 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab305 !==null) { document.getElementById('displayNamelab305').innerText = `\n${currentContentlab305}`;
+                     document.getElementById('lab305').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab305',currentContentlab305);
+                     
+                    }
+                  if(currentContentlab305 =='') {document.getElementById('displayNamelab305').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab305', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab305').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab305').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+</div>
+    <div id="toilet1">TOILET</div>
+    <div id="toilet2">TOILET</div>
+    
+    <div id="lab306">
+        <div>OPEN SOURCE SOFTWARE LAB-306
+        </br>
+        <div#lab306 id="displayNamelab306"></div#lab306>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab306()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab306');
+            window.NameAlertlab306=function (){
+                const currentContentlab306 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab306 !==null) { document.getElementById('displayNamelab306').innerText = `\n${currentContentlab306}`;
+                     document.getElementById('lab306').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab306',currentContentlab306);
+                     
+                    }
+                  if(currentContentlab306 =='') {document.getElementById('displayNamelab306').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab306', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab306').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab306').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+    
+    <div id="lab307">
+        <div>BASIC ELECTRONICS LAB-307
+        </br>
+        <div#lab307 id="displayNamelab307"></div#lab307>
+        </div>
+        <div id="buttons">
+        <button id="occupy" onclick="NameAlertlab307()">Occupy</button> 
+        </div>
+    
+        <script>
+            
+            document.addEventListener('DOMContentLoaded',function() {
+                const socket= io.connect('http://localhost:3000');
+                const displayContentElement=document.getElementById('displayNamelab307');
+            window.NameAlertlab307=function (){
+                const currentContentlab307 = prompt('Enter division, batch:');
+                
+                  if(currentContentlab307 !==null) { document.getElementById('displayNamelab307').innerText = `\n${currentContentlab307}`;
+                     document.getElementById('lab307').style.backgroundColor = 'rgb(250, 175, 14)';
+                     socket.emit('editContentlab307',currentContentlab307);
+                     
+                    }
+                  if(currentContentlab307 =='') {document.getElementById('displayNamelab307').innerText= 'Vacant';}
+                }
+            
+         
+            socket.on('updateContentlab307', (content) => {
+                // Adjusted to display the content in the "Occupied by" line
+                if (content !== null) {
+                  displayContentElement.innerText = `\n${content}`;
+                  document.getElementById('lab307').style.backgroundColor = 'rgb(250, 175, 14)';
+                } if(content=='') {
+                     displayContentElement.innerText = 'Vacant';
+                     document.getElementById('lab307').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+              }
+          });   
+        });
+        </script>
+    </div>
+    
+    <div id="cr32">
+        <div>
+            CR-32
+            </br>
+            <div#crcr32 id="displayNamecr32"></div#crcr32>
+            </div>
+    
+            <div id="buttons">
+            <button id="occupy" onclick="NameAlertcr32()">Occupy</button> 
+            </div>
+            
+            <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script><!--changes-->
+<script>
+    
+    document.addEventListener('DOMContentLoaded',function() {
+        const socket= io.connect('http://localhost:3000');
+        const displayContentElement=document.getElementById('displayNamecr32');
+    
+     window.NameAlertcr32=function (){
+        const currentContentcr32 = prompt('Enter name, subject:');
+        
+          if(currentContentcr32!==null) { document.getElementById('displayNamecr32').innerText = `Occupied by\n${currentContentcr32}`;
+             document.getElementById('cr32').style.backgroundColor = 'rgb(250, 175, 14)';
+             socket.emit('editContentcr32',currentContentcr32);
+            //  sessionStorage.setItem('CRcr32Content', currentContent);
+            }
+          if(currentContentcr32==null)  {document.getElementById('displayNamecr32').innerText= 'Vacant';
+                 socket.emit('editContentcr32', null);
+              // Clear the stored content in sessionStorage
+            //   sessionStorage.removeItem('CRcr32Content');
+            }
+        }
+    
+ 
+    socket.on('updateContentcr32', (content) => {
+        // Adjusted to display the content in the "Occupied by" line
+        if (content!== null) {
+          displayContentElement.innerText = `Occupied by\n${content}`;
+          document.getElementById('cr32').style.backgroundColor = 'rgb(250, 175, 14)';
+        } 
+         if(content=='') 
+         {
+             displayContentElement.innerText = 'Vacant';
+             document.getElementById('cr32').style.backgroundColor = 'rgba(25, 252, 108, 0.982)';
+      }
+    });   
+  });
+</script>
+    </div>
+    <div id=""></div>
+   
+
+    <div id="first">1</div>
+    <div id="second">2</div>
+    <div id="third">3</div>
+    <div id="fourth">4</div>
+    <div id="fifth">5</div>
+    <div id="sixth">6</div>
+    <div id="seventh">7</div>
+
+    <a href="FLOOR1.html"><div id="first">1</div></a>
+    <a href="2FLOOR.html"> <div id="second">2</div></a>
+    <a href="3FLOOR.html"> <div id="third">3</div></a>
+    <a href="4FLOOR.html"> <div id="fourth">4</div></a>
+    <a href="5FLOOR.html"> <div id="fifth">5</div></a>
+    <a href="6FLOOR.html"><div id="sixth">6</div></a>
+    <a href="7FLOOR.html"> <div id="seventh">7</div></a>
+      
+</body>
+</html>
